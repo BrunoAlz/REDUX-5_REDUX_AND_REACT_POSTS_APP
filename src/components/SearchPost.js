@@ -1,10 +1,11 @@
-import React from "react";
+import { useState } from "react";
+
 import "./Form.css";
 const SearchPost = () => {
   //search form state
-  const [search, setSearch] = React.useState("");
+  const [search, setSearch] = useState("");
   //search form submit handler
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
 
@@ -22,7 +23,7 @@ const SearchPost = () => {
           placeholder="Search for a post"
           type="text"
           value={search}
-          onChange={e => setSearch(e.target.value)}
+          onChange={(e) => setSearch(e.target.value)}
         />
         <button type="submit">Search</button>
       </form>

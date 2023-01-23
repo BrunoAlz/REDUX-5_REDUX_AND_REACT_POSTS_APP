@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import SearchPost from "./SearchPost";
 import "./Posts.css";
 
